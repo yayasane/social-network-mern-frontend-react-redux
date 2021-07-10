@@ -1,4 +1,5 @@
 import React from 'react'
+import Navbar from '../Navbar'
 import {
   BrowserRouter as Router,
   Redirect,
@@ -11,6 +12,7 @@ import Trending from '../../pages/Trending'
 const index = () => {
   return (
     <Router>
+      <Navbar />
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/profil" exact component={Profil} />
